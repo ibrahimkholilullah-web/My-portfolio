@@ -5,13 +5,17 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import router from "./Router/router";
+import { Toaster } from 'react-hot-toast';
 
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <div className="container mx-auto">
+ <div className="bg-[#111827]">
+   <React.StrictMode>
+    <div className="container rounded-xl mx-auto bg-[#111827] text-white">
     <RouterProvider router={router} />
     </div>
+    <Toaster />
   </React.StrictMode>
+ </div>
 );

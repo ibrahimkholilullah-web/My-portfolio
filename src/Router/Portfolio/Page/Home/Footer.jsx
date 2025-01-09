@@ -1,15 +1,16 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
+import logo from "../../../../assets/Onner Image/logo.png"
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="footer footer-center mt-2 border-t-2 text-white  rounded p-10">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <NavLink to="/about" className="link link-hover">About us</NavLink>
+          <NavLink to="/contact" className="link link-hover">Contact</NavLink>
+          
         </nav>
         <nav>
+          <img src={logo} className='w-24 border my-4 -mt-3' alt="" />
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
@@ -33,7 +34,8 @@ const Footer = () => {
                   d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
               </svg>
             </a>
-            <a>
+            <a target='_blank' href='https://www.facebook.com/profile.php?id=100084535035397'>
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -47,7 +49,7 @@ const Footer = () => {
           </div>
         </nav>
         <aside>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+          <p>Copyright © {new Date().getFullYear()} - All right reserved by Ibrahim Kholilulla</p>
         </aside>
       </footer>
     );
