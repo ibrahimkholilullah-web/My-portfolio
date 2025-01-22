@@ -5,9 +5,13 @@ import Footer from './Page/Home/Footer';
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
+            <div className=''>
             <Navber></Navber>
+            </div>
+            <div className='container mx-auto'>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

@@ -2,7 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { TbFidgetSpinner } from "react-icons/tb";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../Animatons/variants";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
@@ -28,11 +29,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 pt-32 text-white flex justify-center items-center">
-      <div className="container mx-auto px-4">
-        <h2 className="text-center text-3xl font-bold mb-6">Contact With Me</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-6">
+    <div className=" mt-16 bg-gray-900  text-white flex justify-center items-center">
+      <div className="container mx-auto px-4 ">
+        <motion.h2
+        
+        variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false,amount: 0.7}}className="text-center text-3xl font-bold mb-6">Contact With Me</motion.h2>
+        <div className="grid md:grid-cols-2 py-8 gap-8">
+          <motion.div 
+          variants={fadeIn('right', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false,amount: 0.7}} className="space-y-6">
             <div className="p-6 bg-gray-800 rounded-lg flex items-center">
               <span className="text-red-500 text-2xl mr-4">&#128205;</span>
               <p>Mymensignh, Dhaka, Bangladesh</p>
@@ -49,8 +59,13 @@ const Contact = () => {
               <span className="text-red-500 text-2xl mr-4">&#10004;</span>
               <p>Freelance Available</p>
             </div>
-          </div>
-          <div className="p-6 bg-gray-800 rounded-lg">
+          </motion.div>
+          <motion.div 
+          variants={fadeIn('left', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false,amount: 0.7}}
+          className="p-6 bg-gray-800 rounded-lg">
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <input
@@ -82,7 +97,7 @@ const Contact = () => {
                 <span className="ml-2">&#9993;</span>
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

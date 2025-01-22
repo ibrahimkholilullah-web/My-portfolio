@@ -1,16 +1,28 @@
 import React from 'react';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import onner from "../../../../../assets/Onner Image/onner.jpeg"
+import { fadeIn } from '../../../Animatons/variants';
+import { motion } from 'framer-motion';
 const Banner = () => {
     return (
-        <div className="hero pt-24 min-h-screen">
-        <div className=" lg:flex justify-between items-center w-10/12 gap-10 flex-col md:flex-row-reverse">
-          <div className='lg:w-1/2'>
+        <div className="hero pt-24 px-2 min-h-screen">
+        <div className=" lg:flex justify-between items-center  gap-10 flex-col md:flex-row-reverse">
+          <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false,amount: 0.7}}
+          className='lg:w-1/2'>
           <img
             className='lg:w-3/4 w-2/4 mx-auto rounded-full  p-1 shadow-2xl shadow-black '
             src={onner} />
-          </div>
-          <div className='lg:w-1/2'>
+          </motion.div>
+          <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false,amount: 0.7}}
+          className='lg:w-1/2'>
           <h3 className='text-3xl font-bold my-1'>Hello, <span className='text-[#F6083A]'>I'm</span></h3>
             <h1 className="md:text-5xl text-3xl my-3 font-bold">Ibrahim Kholilulla</h1>
             <h4 className='md:text-2xl text-lg my-2 '>Web Designer And Web Developer</h4>
@@ -49,9 +61,9 @@ const Banner = () => {
                 
             </div>
             <div className='my-4'>
-            <a href='/Resume.pdf' download='Resume.pdf' className="btn rounded-3xl hover:text-[#F6083A] hover:bg-white border-none  bg-[#F6083A] px-8 text-[16px]  text-white uppercase">Download CV</a>
+            <a href='/MERN_Stack_Developer_Ibrahim_kholilullah_Resume.pdf' download='/MERN_Stack_Developer_Ibrahim_kholilullah_Resume.pdf' className="btn rounded-3xl hover:text-[#F6083A] hover:bg-white border-none  bg-[#F6083A] px-8 text-[16px]  text-white uppercase">Download CV</a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     );

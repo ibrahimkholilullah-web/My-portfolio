@@ -1,11 +1,17 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../Animatons/variants';
 const Shared = ({title, headline}) => {
     return (
-        <div className='mx-auto text-center mt-20'>
+        <motion.div 
+        variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false,amount: 0.7}}
+        className='mx-auto text-center my-10 pb-10 '>
             <p className='text-[#F6083A]  uppercase '>{title}</p>
-            <h3 className='md:text-5xl font-bold text-3xl my-3 border-b-2 border-t-2 md:w-96 py-2 mx-auto'>{headline}</h3>
-        </div>
+            <h3 className='md:text-5xl font-bold text-3xl my-3 border-b-2 border-r-2 rounded-xl md:w-96 py-2 mx-auto'>{headline}</h3>
+        </motion.div>
     );
 };
 

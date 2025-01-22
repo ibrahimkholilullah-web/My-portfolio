@@ -43,6 +43,16 @@
       "id": "9",
       "name": "MongoDb",
       "image": "https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png"
+    },
+    {
+      "id": "10",
+      "name": "JWT",
+      "image": "https://ssojet.com/blog/navigating-the-world-of-jwt-a-comprehensive-guide/jwt.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Nodemailer",
+      "image": "https://blog.logrocket.com/wp-content/uploads/2021/08/send-emails-nodejs-nodemailer-1.png"
     }
   ]
   
