@@ -11,7 +11,7 @@ const fadeIn = (direction, delay) => ({
 
 const Banner = () => {
   return (
-    <div className="hero  px-6 mt-12 md:mt-16 lg:mt-16 ">
+    <div className="hero  px-6  md:mt-16 lg:mt-16 ">
       <div className="lg:flex justify-between items-center gap-10 flex-col md:flex-row-reverse">
         
         {/* Profile Image Section */}
@@ -23,7 +23,7 @@ const Banner = () => {
           className="lg:w-1/2 flex justify-center"
         >
           <img
-            className="lg:w-3/4 w-2/4 mx-auto rounded-xl p-1 shadow-2xl shadow-black"
+            className="lg:w-3/4 w-3/4 mx-auto rounded-xl p-1 shadow-2xl shadow-black"
             src={onner}
             alt="Profile"
           />
@@ -41,8 +41,8 @@ const Banner = () => {
             Hello, <span className="text-[#F6083A]">I'm</span>
           </h3>
           <h1 className="md:text-5xl text-3xl my-3 font-bold">Ibrahim Kholilulla</h1>
-          <h4 className="md:text-2xl text-lg my-2">Web Designer & Web Developer</h4>
-          <p className="py-6 text-[#AFB3CA]">
+          <h4 className="md:text-2xl text-sm my-2">Web Designer & Web Developer</h4>
+          <p className="py-6 text-[13px] md:text-lg text-[#AFB3CA]">
             "Professional Web Design & Development Services: Create stunning, responsive websites
             that drive results. Expert designers and developers ensuring seamless user experiences,
             modern designs, and cutting-edge functionality. Let's build your online success!"

@@ -41,9 +41,9 @@ const Navbar = () => {
   <a
     href="/MERN_Stack_Developer_Ibrahim_kholilullah_Resume.pdf"
     download
-    className="hidden md:flex items-center bg-[#F6083A] hover:bg-white hover:text-[#F6083A] border-none  text-white text-sm md:text-md font-semibold px-6 py-3 hover:rounded-none rounded-3xl border transition-all duration-300"
+    className=" md:flex items-center bg-[#F6083A] hover:bg-white hover:text-[#F6083A] border-none  text-white text-[12px] md:text-md font-semibold md:px-6 px-4 py-3 hover:rounded-none rounded-3xl border transition-all duration-300"
   >
-    Download CV <IoDownloadOutline className="ml-2" size={18} />
+    Download CV <IoDownloadOutline className="ml-2 hidden md:block" size={18} />
   </a>
   </div>
 </div>

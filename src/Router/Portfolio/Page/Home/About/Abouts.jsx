@@ -78,7 +78,7 @@ const Abouts = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="lg:w-1/2"
           >
-            <h3 className="text-2xl font-bold">
+            <h3 className="text-2xl mt-12 md:mt-0 font-bold">
               Hello, I am <span className="text-yellow-400">Ibrahim Kholilulla</span>
             </h3>
             <p className="text-gray-300 my-4">Web Designer and Web Developer</p>
