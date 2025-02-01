@@ -24,7 +24,7 @@ const Education = () => {
       
       <div className="md:flex-row justify-between gap-10 my-10">
         {/* Skills Section with Marquee */}
-        <div className="border-b-2 md:border-b-0 border-gray-300 pb-10 md:pb-0">
+        <div className="border-b-2  md:border-b-0 border-gray-300 pb-10 md:pb-0">
           <h1 className="text-3xl font-bold text-center md:text-left mb-4">
             Technical Skills
 
@@ -32,8 +32,8 @@ const Education = () => {
           <p className="text-[#F6083A] text-center md:text-left">2024 - 2025</p>
           
           {/* Marquee Animation for Skills */}
-          <Marquee speed={50} pauseOnHover={true} gradient={false}>
-            <div className="flex gap-10 my-10">
+          <Marquee speed={50} pauseOnHover={true} gradient={false} >
+            <div className="flex gap-10 my-10 ">
               {tech.map((card) => (
                 <Card key={card.id} card={card} />
               ))}
