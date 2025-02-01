@@ -4,9 +4,9 @@ import { FaEye, FaFacebook, FaGithub, FaProjectDiagram, FaTwitter, FaWhatsapp } 
 
 const Gadget = () => {
     return (
-        <div className='text-[#AFB3CA] pt-40 bg-gray-900 min-h-screen'>
-            <div className='flex flex-col md:flex-row justify-evenly gap-10 px-6 md:px-12'>
-            <img src={gadget} className='md:h-[80vh] md:w-1/2 rounded-lg shadow-lg' alt="History" />
+        <div className='text-[#AFB3CA] pt-5 bg-gray-900 min-h-screen'>
+            <div className='lg:flex flex-col md:flex-row justify-evenly gap-10 px-6 md:px-12'>
+            <img src={gadget} className='md:h-[80vh] md:mb-4 lg:w-1/2 rounded-lg shadow-lg' alt="History" />
             <div className='space-y-6'>
                 <h1 className='text-2xl font-bold text-white'>Enhancements and Features</h1>
                 <p className='text-lg'>I think this website needs more feature increments and security enhancements to make it more secure. Firstly, this website needs to be upgraded with better technologies. Then animations should be added to the website, which are commonly used in modern websites. Additionally, attention should be given to making every option on this website simple and user-friendly.</p>

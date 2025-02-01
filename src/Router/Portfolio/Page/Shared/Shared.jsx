@@ -8,9 +8,9 @@ const Shared = ({title, headline}) => {
     initial='hidden'
     whileInView={'show'}
     viewport={{once: false,amount: 0.7}}
-        className='mx-auto text-center my-10 pb-10 '>
+        className=' my-10 pb-10 '>
             <p className='text-[#F6083A]  uppercase '>{title}</p>
-            <h3 className='md:text-5xl font-bold text-3xl my-3 border-b-2 border-r-2 rounded-xl md:w-96 py-2 mx-auto'>{headline}</h3>
+            <h3 className='md:text-5xl font-bold text-3xl my-3  rounded-xl md:w-96 py-2 '>{headline}</h3>
         </motion.div>
     );
 };

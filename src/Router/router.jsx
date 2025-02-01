@@ -6,6 +6,8 @@ import Abouts from "./Portfolio/Page/Home/About/Abouts";
 import HistoryDitails from "./Portfolio/Ditails/HistoryDitails";
 import TravelDitails from "./Portfolio/Ditails/TravelDitails";
 import Gadget from "./Portfolio/Ditails/Gadget";
+import JerinParlour from "./Portfolio/Ditails/JerinParlour";
+import HuntDItails from "./Portfolio/Ditails/HuntDItails";
 
 const router = createBrowserRouter([
     {
@@ -22,16 +24,24 @@ const router = createBrowserRouter([
           element:<Abouts></Abouts>
         },
         {
-          path:'historyDetails',
+          path:'/historyDetails',
           element:<HistoryDitails></HistoryDitails>
         },
         {
-          path:'travelDitails',
+          path:'/travelDetails',
           element:<TravelDitails></TravelDitails>
         },
         {
-          path:'/GadgetDitails',
+          path:'/GadgetDetails',
           element: <Gadget></Gadget>
+        },
+        {
+          path:'/jerinParlour',
+          element: <JerinParlour></JerinParlour>
+        },
+        {
+          path:'/huntDItails',
+          element: <HuntDItails></HuntDItails>
         }
       ]
     },

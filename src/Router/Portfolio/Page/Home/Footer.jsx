@@ -4,11 +4,7 @@ import logo from "../../../../assets/Onner Image/logo.png"
 const Footer = () => {
     return (
         <footer className="footer footer-center mt-2 border-t-2 text-white  rounded p-10">
-        <nav className="grid grid-flow-col gap-4">
-          <NavLink to="/about" className="link link-hover">About us</NavLink>
-          <NavLink to="/contact" className="link link-hover">Contact</NavLink>
-          
-        </nav>
+        
         <nav>
           <img src={logo} className='w-24 border my-4 -mt-3' alt="" />
           <div className="grid grid-flow-col gap-4">

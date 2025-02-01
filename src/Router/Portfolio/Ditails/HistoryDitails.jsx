@@ -4,7 +4,7 @@ import { FaEye, FaFacebook, FaGithub, FaProjectDiagram, FaTwitter, FaWhatsapp } 
 
 const HistoryDitails = () => {
     return (
-        <div className='text-[#AFB3CA] pt-40 bg-gray-900 min-h-screen'>
+        <div className='text-[#AFB3CA] pt-5 bg-gray-900 min-h-screen'>
             <div className='flex flex-col md:flex-row justify-evenly gap-10 px-6 md:px-12'>
             <img src={history} className='md:h-[80vh] md:w-1/2 rounded-lg shadow-lg' alt="History" />
             <div className='space-y-6'>
