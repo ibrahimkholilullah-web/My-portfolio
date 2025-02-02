@@ -25,7 +25,7 @@ const Navbar = () => {
   
 
   return (
-    <div className="navbar bg-[#111827] pt-6 px-4">
+    <div className="navbar bg-[#111827]  rounded-tl-lg rounded-tr-lg pt-6 px-4">
   <div className="navbar-start ">
     
   <Link to="/" className="text-xl md:text-3xl text-white font-bold ml-3">

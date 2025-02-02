@@ -73,7 +73,7 @@ const Contact = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
-            className="p-6 bg-gray-800 rounded-lg"
+            className="p-6 bg-gray-800 relative rounded-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -85,7 +85,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div>
+              <div >
                 <textarea
                   name="message"
                   placeholder="Type Your Message"
@@ -95,7 +95,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full p-3 bg-red-500 hover:bg-red-600 rounded-lg text-white flex items-center justify-center transition duration-300"
+                className=" md:absolute bottom-4 hover:rounded-none  p-3 bg-[#F6083A] hover:bg-[#F6083A] rounded-lg text-white flex items-center justify-center transition duration-300"
                 disabled={loading}
               >
                 {loading ? <TbFidgetSpinner className="animate-spin text-xl" /> : "Send Message"}
